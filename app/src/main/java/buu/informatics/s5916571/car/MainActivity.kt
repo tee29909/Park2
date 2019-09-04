@@ -81,11 +81,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun selected() : Boolean {
-        if(select == ""){
-            return false
-        }else{
-            return true
-        }
+        return select != ""
     }
     fun checkInput() : Boolean {
         var slotClick = listOf<TextView>(findViewById(R.id.inputName) , findViewById(R.id.inputCarnumber) , findViewById(R.id.inputTypeCar))
